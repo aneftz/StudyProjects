@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: gainsboro;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    color: rebeccapurple;
+    text-align: center;
+  }
+
+  h3 {
+    text-align: center;
+  }
+  
+  table {
+    border: 2px solid darkorchid;
+    width: 1110px;
+    margin: 0 auto;
+  }
+  
+  thead {
+    background-color: plum;
+  }
+  
+  td {
+    border-top: 1px solid darkorchid;
+  }
+  
+  .first {
+    font-family: monospace;
+    background-color: beige;
+  }

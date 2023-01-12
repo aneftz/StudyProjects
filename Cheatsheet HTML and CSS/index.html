@@ -1,0 +1,121 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" lang="en">
+        <title>Cheat sheet</title>
+        <link href="./index.css" type="text/css" rel="stylesheet">
+    </head>
+    <body>
+        <h1>HTML/CSS cheatsheet</h1>
+        <h3>HTML sheet</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tag</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="first">&lt;article&gt;</td>
+                    <td>Article</td>
+                    <td>Typically get used for any kind of content: text, audio, video when it all are united with common topic</td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;aside&gt;</td>
+                    <td>Aside</td>
+                    <td>Tag that additional content to the &lt;article&gt; tag</td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;section&gt;</td>
+                    <td>Section</td>
+                    <td>Combine all the content into section </td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;figure&gt;</td>
+                    <td>Figure</td>
+                    <td>Used to encapsulate media such as an image, illustration, diagram, code snippet, etc, which is referenced in the main flow of the document.</td>
+                </tr>
+                <tr>
+                    <td class="first">&lt;figcaption&gt;</td>
+                    <td>Figcaption</td>
+                    <td>Goes inside of &lt;figure&gt; tag, literally its description of image inside of &lt;figure&gt; tag</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>CSS sheet</h3>
+        <table>
+            <thead>
+                <th>Property</th>
+                <th>Value</th>
+                <th>Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="first">border</td>
+                    <td>1px solid red;</td>
+                    <td>Create border with size, kind and color</td>
+                </tr>
+                <tr>
+                    <td class="first">padding</td>
+                    <td>1px 3px 4px 5px</td>
+                    <td>Create space between <strong>content</strong> and <strong>border</strong> complimentary  top, right, bottom, left</td>
+                </tr>
+                <tr>
+                    <td class="first">margin</td>
+                    <td>1px 3px 4px 5px</td>
+                    <td>Create space outside of content, padding and border complimentary  top, right, bottom, left</td>
+                </tr>
+                <tr>
+                    <td class="first">overflow</td>
+                    <td>hidden, scroll, visible</td>
+                    <td>Controls what happens to content that spills or overflows, outside its box. <strong>Hidden</strong> - content that overflows will be hidden from view. <strong>Scroll</strong> - scrollbar will be added to the element's box so that the rest of the content can be viewed by scrolling. <strong>Visible</strong>- overflow content will be displayed outside of the containing element. Default value.</td>
+                </tr>
+                <tr>
+                    <td class="first">visibility</td>
+                    <td>hidden, visible, collapse</td>
+                    <td>Property content can be hidden with. <strong>Hidden</strong> - hides an element. <strong>visible</strong> - displays an element. <strong>collapse</strong> - collapses an element.</td>
+                </tr>
+                <tr>
+                    <td class="first">box-sizing</td>
+                    <td>content-box, border-box</td>
+                    <td>Controls box model used by browser.<strong>Content-box</strong> - default value. <strong>Border-box</strong> - Sets new box model, box-sizing is not affected by thickness or padding</td>
+                </tr>
+                <tr><td colspan="3">WIDTH OF THE BOX = PADDING LEFT + PADDING RIGHT + BORDER LEFT + BORDER RIGHT</td>
+            </tr>
+                <tr>
+                    <td colspan="3">HEIGHT OF THE BOX = PADDING TOP + PADDING BOTTOM + BORDER TOP + BORDER BOTTOM</td>
+                </tr>
+                <tr>
+                    <td colspan="3"><strong>Page  Flow</strong></td>
+                </tr>
+                <tr>
+                    <td class="first">position</td>
+                    <td>static, absolute, relative, fixed, sticky</td>
+                    <td>Set up page flow. <strong>Static</strong> - default value. <strong>Absolute</strong> - is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling. Note: Absolute positioned elements are removed from the normal flow, and can overlap elements. <strong>Relative</strong> - is positioned relative to its normal position with top, bottom, left, right values. <strong>Fixed</strong> - is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. The top, right, bottom, and left properties are used to position the element. A fixed element does not leave a gap in the page where it would normally have been located. <strong>Sticky</strong> - is positioned based on the user's scroll position. A sticky element toggles between <strong>relative</strong> and <strong>fixed</strong>, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). </td>
+                </tr>
+                <tr>
+                    <td class="first">z-index</td>
+                    <td>N - any number</td>
+                    <td>Set ups layer element gonna be located in. Depth of element</td>
+                </tr>
+                <tr>
+                    <td class="first">display</td>
+                    <td>block, inline, inline-block</td>
+                    <td>Browser will render elements complimentary as <strong>block</strong>, <strong>inline</strong> of <strong>inline-block</strong></td>
+                </tr>
+                <tr>
+                    <td class="first">font-weight</td>
+                    <td>bold, normal, lighter, bolder</td>
+                    <td>Complimentary <strong>bold</strong> font, <strong>normal</strong> as default, <strong>lighter</strong> as lighter font than parent value, <strong>bolder</strong> as bolder than parent's value. </td>
+                </tr>
+                <tr>
+                    <td class="first">font-style</td>
+                    <td>normal, italic, oblique, initial, inherit</td>
+                    <td><strong>Normal</strong> - default. <strong>italic</strong> - thin. <strong>oblique</strong> - browser displays an oblique font style. <strong>Initial</strong> - sets this property to its default value. <strong>Inherit</strong> - sets property to parent's value.</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
