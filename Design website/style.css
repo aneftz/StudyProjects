@@ -1,0 +1,322 @@
+
+/* Все что нужно регулировать отедльно - разделяй на контейнеры div! Например, смотри в секцию кнопки.
+ Создали общую секцию, затем текст внутри, чтобы его не трогать, создаем еще одну секцию внутри,
+  которая будет содержать все кнопки. Таким образом, можем регулировать все 6 кнопок, трогая текст!*/
+
+
+
+/*In body section we set up width (80%) to limit spreading along all browser wiidth.
+ And set up "mmargin: 0 auto;" to center it */
+
+body {
+    max-width: 80%;
+    margin: 0 auto;
+    height: 100px;
+    font-family: 'Varela Round', sans-serif;
+}
+
+/* We set up left float for h1 "My Website Design System" with class "left" to put it on the left side */
+
+.left {
+    float: left;
+}
+
+/* We set up right float for navbar with class "right" to put it on the right side */
+
+.right {
+    float: right;
+}
+
+/* Then we clear broke float to start normal float after all it */
+
+.clear {
+    clear: both;
+}
+
+/* Set up flex diplay to make it look in line as blocks and setting up width and justifying we need */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+}
+
+/* removing underline with "text-decoration"and setting up paddings and margins we need */
+
+nav a {
+    padding: 10px 0;
+    margin: 5%;
+    color: #2c553c;
+    text-decoration: none;
+}
+
+/* Creating 4 containers for all the sections (colors, fonts, text-styles, btns) 
+and set up width 100% to enable margin work with second variable "auto" to make it centered. */
+
+.container {
+    border: 1px solid #2c553c;
+    margin: 10px auto;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Set up width we need. Center text and colors paragraphs with margin (x auto)
+ and align text in the center with "text-align". */
+
+.colors {
+    display: inline-block;
+    width: 32%;
+    text-align: center;
+    margin: 20px auto;
+    min-height: 100px;
+}
+
+.font-styles {
+    display: inline-block;
+    width: 47%;
+    text-align: left;
+}
+
+/* First we create section called "div" class btns container.
+ Inside of it one more div with class "btn-styles" which contains all the btns. */
+
+ /* set up width for div with 6  btns. And align it to the center */
+.button-styles {
+    width: 100%;
+    text-align: center;
+}
+
+/* Set up each btn, giving it parameters */
+button {
+    height: 40px;
+    width: 100px;
+    margin: 4%;
+    font-weight: bolder; 
+}
+
+/* each btn appearance, hover, active */
+
+.b1 {
+    border-radius: 5px;
+    background-color: rgb(25, 156, 115);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.4s ease 0s;
+    border: none;
+    cursor: pointer;
+}
+
+.b1:hover{
+    background-color: #2c5522;
+    letter-spacing: 1px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.b2 {
+    border-radius: 50px;
+    background-color: #5BC8AC;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.4s ease 0s;
+    border: none;
+    cursor: pointer;
+}
+
+.b2:hover{
+    color:rgb(190, 36, 25);
+    background-color: #E6D72A;
+    letter-spacing: 1px;
+    transition: all 0.4s ease 0s;
+    text-shadow: 1px 1px 2px pink;
+    width: 120px;
+    cursor: pointer;
+}
+
+.b3 {
+    border-radius: 88px;
+    background-color: #FF1493;
+    color: black;
+    text-transform: uppercase;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.b3:hover {
+    width: 80px;
+    height: 80px;
+    border-radius: 100px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.b4{
+    border-radius: 5px;
+    color: #2c5522;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.4s ease 0s;
+    border: 4px solid #2c5522;
+    cursor: pointer;
+    
+}
+.b4:hover{
+    border: 5px solid black;
+    letter-spacing: 1px;
+    transition: all 0.4s ease 0s;
+    border-radius: 50px;
+    font-weight: bold;
+    width: 150px;
+    cursor: pointer;
+} 
+.b5{
+    border-radius: 5px;
+    background-color: rgb(224, 19, 132);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.4s ease 0s;
+    border: none;
+    cursor: pointer;
+    
+}
+.b5:hover{
+    background-color: rgb(29, 101, 209);
+    letter-spacing: 1px;
+    transition: all 0.4s ease 0s;
+    width: 110px;
+    cursor: pointer;
+    box-shadow: 0 13px 17px 0 rgba(0,0,0,0.25), 0 18px 51px 0 rgba(0,0,0,0.20);
+}
+.b6{
+    border-radius: 5px;
+    background-color: rgb(60, 2, 128);
+    color: #fff;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: all 0.4s ease 0s;
+    border: none;
+    cursor: pointer;
+}
+.b6:hover{
+    background-color: rgb(230, 42, 89);
+    letter-spacing: 1px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(25, 156, 115), #2c5522);
+    box-shadow: 0 13px 17px 0 rgba(0,0,0,0.25), 0 18px 51px 0 rgb(189, 65, 214);
+}
+
+
+
+/* colors injection in html */
+
+.blueviolet {
+    background-color: blueviolet;
+}
+
+.blue {
+    background-color: mediumblue;
+}
+
+.red {
+    background-color: red;
+}
+
+.black {
+    background-color: black;
+}
+
+.black > p {
+    color: white;
+}
+
+.cyan {
+    background-color: cyan;
+}
+
+.deeppink {
+    background-color: deeppink;
+}
+
+
+/* fonts setups */
+.notoSerifJP {
+    font-family: 'Noto Serif JP', serif;
+
+}
+
+.nanumMyeongjo {
+    font-family: 'Nanum Myeongjo', serif;
+}
+
+.cinzel {
+    font-family: 'Cinzel', serif;
+}
+
+.playfair {
+    font-family: 'Playfair Display SC', serif;
+}
+
+.notoSerifJP1 {
+    font-size: 21px;
+    font-weight: 200;
+}
+
+.notoSerifJP2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.notoSerifJP3 {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.nanumMyeongjo1 {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.nanumMyeongjo2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.nanumMyeongjo3 {
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.cinzel1 {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.cinzel2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.cinzel3 {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+.playfair1 {
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.playfair2 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.playfair3 {
+    font-style: italic;
+    font-size: 12px;
+    font-weight: 900;
+}
