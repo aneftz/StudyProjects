@@ -66,6 +66,7 @@ body {
     z-index: 22;
     background-color: black;
     font-family: Inter, sans-serif;
+    
 }
 
 /* Плашка для бургер меню */
@@ -83,7 +84,7 @@ body {
 .header_body {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     height: 80px;
     align-items: center;
 }
@@ -91,10 +92,12 @@ body {
 .header_logo {
     position: relative;
     z-index: 3;
+    font-size: 40px;
+    font-weight: 700;
 }
 
 .menu {
-    width: 60%;
+    width: 64%;
 }
 
 .menu_list {
@@ -104,10 +107,13 @@ body {
     position: relative;
     z-index: 2;
     width: 100%;
+    font-size: 16px;
+    font-weight: 700;
     /* чтобы выводить меню поверх плашки при уменьшении экрана */
 }
 
 .menu_list li {
+    width: 91%;
     margin: 0px 0px 0px 15px;
     /* Равняем отступ с логотипом, который задан у логотипа паддингом контейнера - 15 пкс, делаем марджин у каждого ли - 15пск */
 }
@@ -116,8 +122,32 @@ body {
     display: none;
 }
 
+.search {
+    z-index: 3;
+    margin-left: 1rem;
+}
+
+.group {
+    display: flex;
+    justify-content: flex-end;
+    width: 87%;
+    align-items: center;
+    
+}
+
+.header_bodyWrapp {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
 @media screen and (max-width: 784px) {
 
+    .header_logo {
+        font-size: 1.7rem;
+    }
     /* не даем скроллить страницу во время открытого меню бургера */
     body.lock {
         overflow: hidden;
@@ -215,3 +245,10 @@ body {
 
 /* ----------------------------"WE ARE DIGITAL AGENCY" SECTION --------------------------*/
 
+.da_section {
+    background-image: url('./resources/background1.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
