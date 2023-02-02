@@ -182,7 +182,7 @@ body {
         top: -100%;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: auto;
         background: rgb(9, 138, 91);
         background: radial-gradient(circle, rgba(9, 138, 91, 1) 0%, rgba(0, 0, 0, 1) 60%);
         padding: 70px 0 0 0;
