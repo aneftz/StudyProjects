@@ -49,7 +49,7 @@ body {
 
 /* ограничивающий контейнер для всех случаев */
 ._container {
-    max-width: 1090px;
+    max-width: 75%;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -66,7 +66,7 @@ body {
     z-index: 22;
     background-color: black;
     font-family: Inter, sans-serif;
-    
+
 }
 
 /* Плашка для бургер меню */
@@ -97,7 +97,7 @@ body {
 }
 
 .menu {
-    width: 64%;
+    width: 69%;
 }
 
 .menu_list {
@@ -118,21 +118,59 @@ body {
     /* Равняем отступ с логотипом, который задан у логотипа паддингом контейнера - 15 пкс, делаем марджин у каждого ли - 15пск */
 }
 
+/* Ссылка "Контакт" */
+li:last-child {
+
+    border: 1px solid #098A5B;
+    background-color: transparent;
+    color: #098A5B;
+    padding: 15px 15px 15px 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+
+}
+
+
+li:last-child:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+/* Меню ховер */
+
+.menu_link:hover {
+    
+    border-bottom: 2px solid #098A5B;
+    transition: all .4s ease-in-out;
+    color: #30dd8a;
+    box-shadow: 0px 1px 28px 30px 0 rgba(23, 168, 108, 0.75);
+
+}
+
 .burger_menu {
     display: none;
 }
 
 .search {
     z-index: 3;
-    margin-left: 1rem;
+    margin-left: 16px;
 }
 
 .group {
     display: flex;
     justify-content: flex-end;
-    width: 87%;
+    width: 91%;
     align-items: center;
-    
+
 }
 
 .header_bodyWrapp {
@@ -148,6 +186,7 @@ body {
     .header_logo {
         font-size: 1.7rem;
     }
+
     /* не даем скроллить страницу во время открытого меню бургера */
     body.lock {
         overflow: hidden;
@@ -243,12 +282,140 @@ body {
     }
 }
 
+
 /* ----------------------------"WE ARE DIGITAL AGENCY" SECTION --------------------------*/
 
 .da_section {
-    background-image: url('./resources/background1.svg');
+    padding-top: 190px;
+    background-image: url('./resources/background1.png');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100%;
+    color: white;
+}
+
+@media screen and (max-width: 866px) {
+
+    .text {
+
+        align-items: center;
+    }
+
+
+    .text h1 {
+        text-align: center;
+    }
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.text p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    color: #098A5B;
+    text-transform: uppercase;
+}
+
+.text h1 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    margin-bottom: 35px;
+}
+
+.getStart {
+    border: 1px solid #098A5B;
+    background-color: transparent;
+    color: #098A5B;
+    width: 193px;
+    height: 75px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.getStart:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+    cursor: pointer;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding: 2rem 0 2rem 0;
+}
+
+.box {
+    background: #313131;
+    border: 2px solid #098A5B;
+    display: flex;
+    flex-direction: column;
+    width: 294px;
+    height: 240px;
+    padding: 25px 25px 25px 14px;
+    gap: 25px;
+    position: relative;
+}
+
+.box_img {
+    display: block;
+    max-width: 58px;
+    max-height: 58px;
+
+}
+
+.box_h {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    position: relative;
+}
+
+/* Создать линию снизу с помощью псевдокласса after */
+.box_h::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #098A5B;
+    width: 73px;
+    height: 2px;
+    margin-top: 12px;
+}
+
+.box_text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+@media screen and (max-width: 1301px) {
+    .boxes {
+        justify-content: space-around;
+    }
 }
