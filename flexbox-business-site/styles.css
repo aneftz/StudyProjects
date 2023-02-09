@@ -49,9 +49,10 @@ body {
 
 /* ограничивающий контейнер для всех случаев */
 ._container {
-    max-width: 75%;
+    max-width: 78%;
     margin: 0 auto;
     padding: 0 15px;
+    position: relative;
 }
 
 
@@ -148,7 +149,7 @@ li:last-child:hover {
 /* Меню ховер */
 
 .menu_link:hover {
-    
+
     border-bottom: 2px solid #098A5B;
     transition: all .4s ease-in-out;
     color: #30dd8a;
@@ -373,7 +374,7 @@ li:last-child:hover {
     display: flex;
     flex-direction: column;
     width: 294px;
-    height: 240px;
+    min-height: 240px;
     padding: 25px 25px 25px 14px;
     gap: 25px;
     position: relative;
@@ -417,5 +418,177 @@ li:last-child:hover {
 @media screen and (max-width: 1301px) {
     .boxes {
         justify-content: space-around;
+    }
+}
+
+/* ---------------------------- Services section --------------------------*/
+
+.services {
+    background-color: #1E1E1E;
+    height: fit-content;
+}
+
+/* Services, Works, About, Testimonals sections */
+.section_p {
+    text-transform: uppercase;
+    color: #098A5B;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    margin-bottom: 15px;
+}
+
+.section_h {
+    margin-left: 85px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: white;
+}
+
+
+.section_text {
+    display: flex;
+    flex-direction: column;
+    padding-top: 7rem;
+    position: relative;
+    margin-bottom: 35px;
+    width: 50%;
+}
+
+.section_text::before {
+    content: '';
+    position: absolute;
+    background-color: #098A5B;
+    width: 72px;
+    height: 2px;
+    bottom: 53px;
+
+}
+
+/*------------------------------------------------------------------ */
+
+.services_item {
+    width: 341px;
+    min-height: 299px;
+    background: #313131;
+    border: 2px solid #098A5B;
+    padding: 50px 20px 60px 30px;
+
+}
+
+.services_box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 13rem;
+    position: relative;
+    color: white;
+}
+
+.services_box::after {
+    content: '';
+    position: absolute;
+    background-color: #098A5B;
+    height: 82px;
+    width: 2px;
+    top: 80%;
+    left: 50%;
+}
+
+@media screen and (max-width: 1432px) {
+
+    .services_box::after {
+        top: 88%;
+    }
+}
+
+@media screen and (max-width: 953px) {
+
+    .services_box::after {
+        top: 94%;
+    }
+
+    .services_box {
+        justify-content: center;
+    }
+}
+
+.services_box h2 {
+    margin: 40px 0px 20px 0px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 35px;
+}
+
+.services_box p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+/* ---------------------------- Works section --------------------------*/
+
+.works {
+    background-color: #313131;
+    padding-bottom: 170px;
+}
+
+.section_wrap {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+
+
+.works_btn {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #098A5B;
+    border: 2px solid #098A5B;
+    padding: 17px 23px 17px 23px;
+    background-color: transparent;
+
+}
+
+.works_btn:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+    cursor: pointer;
+}
+
+
+.work_imgs {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.work_imgs img {
+    max-width: 100%;
+}
+
+@media screen and (max-width: 1439px) {
+    .hidden_img {
+        display: none;
     }
 }
