@@ -441,7 +441,7 @@ li:last-child:hover {
 }
 
 .section_h {
-    margin-left: 85px;
+    padding-left: 85px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -452,12 +452,10 @@ li:last-child:hover {
 
 
 .section_text {
-    display: flex;
-    flex-direction: column;
     padding-top: 7rem;
     position: relative;
     margin-bottom: 35px;
-    width: 50%;
+    width: 89%;
 }
 
 .section_text::before {
@@ -467,7 +465,7 @@ li:last-child:hover {
     width: 72px;
     height: 2px;
     bottom: 53px;
-
+    top: 129px;
 }
 
 /*------------------------------------------------------------------ */
@@ -547,9 +545,14 @@ li:last-child:hover {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    justify-content: space-between;
-    margin-bottom: 80px;
+    justify-content: center;
+    margin-bottom: 45px;
+    min-width: 341px;
+    width: 100%;
+    position: relative;
 }
+
+
 
 
 .works_btn {
@@ -562,6 +565,7 @@ li:last-child:hover {
     border: 2px solid #098A5B;
     padding: 17px 23px 17px 23px;
     background-color: transparent;
+    min-width: 112px;
 
 }
 
@@ -585,10 +589,145 @@ li:last-child:hover {
 
 .work_imgs img {
     max-width: 100%;
+    cursor: pointer;
 }
 
 @media screen and (max-width: 1439px) {
     .hidden_img {
         display: none;
+    }
+}
+
+@media screen and (max-width: 833px) {
+
+    ._container {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+    }
+
+    .section_text {
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    .section_text::before {
+        display: none;
+    }
+
+    .section_h {
+        padding: 0px;
+    }
+
+    .section_wrap {
+        flex-direction: column;
+        min-width: 0px;
+        align-items: center;
+    }
+
+}
+
+
+/*---------------------------About section ------------------------ */
+
+.about {
+    background-color: #1E1E1E;
+}
+
+/* Делаем сетку для раздела с фото */
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    height: 574px;
+    padding-bottom: 36px;
+
+}
+
+.div_img1 {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.div_img2 {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.div_img3 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+.div_box {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.div_img1 {
+    background-image: url(./resources/about_first.svg);
+}
+
+.div_img2 {
+    background-image: url(./resources/about_second.svg);
+}
+
+.div_img3 {
+    background-image: url(./resources/about_third.svg);
+}
+
+.text_about {
+    font-family: 'Inter';
+    font-style: normal;
+    color: #FFFFFF;
+    margin: 0px 0px 6px 22px;
+}
+
+/* Текст внутри картинок */
+
+.text_about h2 {
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 35px;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    padding-bottom: 6px;
+}
+
+.text_about p {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width:899px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .div_img1 {
+        grid-area: 1 / 1 / 2 / 3;
+    }
+
+    .div_img2 {
+        grid-area: 2 / 1 / 3 / 3;
+    }
+
+    .div_img3 {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+
+    .div_box {
+        align-items: center;
+        justify-content: center;
+    }
+    .text_about {
+        margin: none;
     }
 }
