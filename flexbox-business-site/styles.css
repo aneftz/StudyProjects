@@ -41,13 +41,13 @@ body {
     color: #000;
 }
 
-/* обложка всего контента */
+/* обложка всего контента / Main wrap */
 .wrapper {
     min-height: 100%;
     overflow: hidden;
 }
 
-/* ограничивающий контейнер для всех случаев */
+/* ограничивающий контейнер для всех случаев / wrap Container */
 ._container {
     max-width: 78%;
     margin: 0 auto;
@@ -70,7 +70,7 @@ body {
 
 }
 
-/* Плашка для бургер меню */
+/* Плашка для бургер меню / Burger Menu */
 .header::before {
     content: '';
     position: absolute;
@@ -119,7 +119,7 @@ body {
     /* Равняем отступ с логотипом, который задан у логотипа паддингом контейнера - 15 пкс, делаем марджин у каждого ли - 15пск */
 }
 
-/* Ссылка "Контакт" */
+/* Ссылка "Контакт" / "Contact" link-button */
 li:last-child {
 
     border: 1px solid #098A5B;
@@ -146,7 +146,7 @@ li:last-child:hover {
     box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
 }
 
-/* Меню ховер */
+/* Меню ховер / Menu with hover effect */
 
 .menu_link:hover {
 
@@ -188,12 +188,12 @@ li:last-child:hover {
         font-size: 1.7rem;
     }
 
-    /* не даем скроллить страницу во время открытого меню бургера */
+    /* не даем скроллить страницу во время открытого меню бургера / Locking body while menu is open */
     body.lock {
         overflow: hidden;
     }
 
-    /* Создаем бургер меню в маленьком экране */
+    /* Создаем бургер меню в маленьком экране / Menu Burger in small screen */
     .burger_menu {
         display: block;
         position: relative;
@@ -231,7 +231,7 @@ li:last-child:hover {
         transition: all 0.3s ease 0s;
     }
 
-    /* разворачиваем класс, который создается в JS файле "актив" с плашками, которые мы создали ранее before и after, чтобы менять символ из трех полос на крест в активном состоянии */
+    /* разворачиваем класс, который создается в JS файле "актив" с плашками, которые мы создали ранее before и after, чтобы менять символ из трех полос на крест в активном состоянии / style classe gets created with JS */
     .burger_menu.active::before {
         transform: rotate(45deg);
         top: 9px;
@@ -246,7 +246,7 @@ li:last-child:hover {
         transform: scale(0);
     }
 
-    /* подгоняем меню в маленьком экране */
+    /* подгоняем меню в маленьком экране / making menu responsive in small screen */
     .menu {
         position: fixed;
         top: -100%;
@@ -396,7 +396,7 @@ li:last-child:hover {
     position: relative;
 }
 
-/* Создать линию снизу с помощью псевдокласса after */
+/* Создать линию снизу с помощью псевдокласса after / Making line below section with after pseudo class */
 .box_h::after {
     content: '';
     display: block;
@@ -428,7 +428,7 @@ li:last-child:hover {
     height: fit-content;
 }
 
-/* Services, Works, About, Testimonals sections */
+/* Heading of Services, Works, About, Testimonals sections */
 .section_p {
     text-transform: uppercase;
     color: #098A5B;
@@ -635,7 +635,7 @@ li:last-child:hover {
     background-color: #1E1E1E;
 }
 
-/* Делаем сетку для раздела с фото */
+/* Делаем сетку для раздела с фото/Making grid for images section */
 .parent {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -688,7 +688,7 @@ li:last-child:hover {
     margin: 0px 0px 6px 22px;
 }
 
-/* Текст внутри картинок */
+/* Текст внутри картинок/Text inside images  */
 
 .text_about h2 {
     font-weight: 700;
@@ -731,3 +731,4 @@ li:last-child:hover {
         margin: none;
     }
 }
+
