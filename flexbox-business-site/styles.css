@@ -58,6 +58,10 @@ body {
 
 /* ---------------------header-------------------------------------------- */
 
+.fonts {
+    font-family: 'Inter';
+    font-style: normal;
+}
 
 .header {
     position: fixed;
@@ -126,8 +130,6 @@ li:last-child {
     background-color: transparent;
     color: #098A5B;
     padding: 15px 15px 15px 15px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     text-transform: uppercase;
@@ -315,8 +317,6 @@ li:last-child:hover {
 }
 
 .text p {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -325,8 +325,6 @@ li:last-child:hover {
 }
 
 .text h1 {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 64px;
     line-height: 77px;
@@ -341,8 +339,6 @@ li:last-child:hover {
     color: #098A5B;
     width: 193px;
     height: 75px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
@@ -388,8 +384,6 @@ li:last-child:hover {
 }
 
 .box_h {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 27px;
@@ -408,8 +402,6 @@ li:last-child:hover {
 }
 
 .box_text {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 13px;
     line-height: 16px;
@@ -432,8 +424,6 @@ li:last-child:hover {
 .section_p {
     text-transform: uppercase;
     color: #098A5B;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
@@ -442,8 +432,6 @@ li:last-child:hover {
 
 .section_h {
     padding-left: 85px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
@@ -519,16 +507,12 @@ li:last-child:hover {
 
 .services_box h2 {
     margin: 40px 0px 20px 0px;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 29px;
     line-height: 35px;
 }
 
 .services_box p {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -556,8 +540,6 @@ li:last-child:hover {
 
 
 .works_btn {
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -682,8 +664,6 @@ li:last-child:hover {
 }
 
 .text_about {
-    font-family: 'Inter';
-    font-style: normal;
     color: #FFFFFF;
     margin: 0px 0px 6px 22px;
 }
@@ -703,6 +683,52 @@ li:last-child:hover {
     font-size: 15px;
     line-height: 18px;
     text-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+
+/* Who we are ,  Philosophy, How we work sections */
+
+.comments {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    color: #fff;
+    position: relative;
+    padding-bottom: 150px;
+}
+
+.about_container::after {
+    content: '';
+    position: absolute;
+    background-color: #098A5B;
+    width: 2px;
+    height: 82px;
+    left: 50%;
+    top: 90%;
+}
+
+.comments_item {
+    max-width: 33%;
+    max-height: 151px;
+    padding-top: 10px;
+}
+
+.comments_p {
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+}
+
+.comments_h {
+    padding-left: 1rem;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.comments_line {
+    border-right: 2px solid #098A5B;
 }
 
 @media screen and (max-width:899px) {
@@ -727,8 +753,205 @@ li:last-child:hover {
         align-items: center;
         justify-content: center;
     }
+
     .text_about {
         margin: none;
     }
+
+    .about_container::after {
+        display: none;
+    }
+
+    .comments {
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .comments_line {
+        border: none;
+    }
+
+    .comments_item {
+        max-width: 100%;
+
+    }
+
+    .comments_h {
+        padding-bottom: 2%;
+        border-bottom: 2px solid #098A5B;
+    }
 }
 
+/* Testimonials section */
+
+.testimonials {
+    background-color: #313131;
+    height: 54rem;
+}
+
+.testimonials_container {
+    display: flex;
+    gap: 3rem;
+}
+
+
+.testimonials_boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border: 1px solid #777777;
+    padding-top: 45px;
+    z-index: 1;
+    color: white;
+    background: rgb(9, 138, 91);
+    background: linear-gradient(0deg, rgba(9, 138, 91, 0) 19%, rgba(16, 16, 23, 1) 19%);
+}
+
+.comma {
+    display: block;
+    max-height: 45px;
+}
+
+.stars {
+    display: block;
+    margin: 0 auto;
+    max-width: 135px;
+
+}
+
+.test_logo {
+    display: block;
+    max-height: 62px;
+    z-index: 2;
+}
+
+.testimonials_boxes p {
+    padding: 3.5rem 1.5rem 1.5rem 1.5rem;
+}
+
+
+/* Blog section / Latest news */
+
+.news {
+    background-color: #1E1E1E;
+    margin: 0 auto;
+    padding-top: 89px;
+    padding-bottom: 191px;
+    position: relative;
+}
+
+.news::after {
+    position: absolute;
+    content: '';
+    border: 2px solid #098A5B;
+    height: 82px;
+    left: 50%;
+    top: 91%;
+}
+
+.news_text {
+    text-align: center;
+}
+
+.news_h {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #fff;
+}
+
+.news_p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    color: #098A5B;
+}
+
+/* Blog. Boxes */
+
+.news_boxes {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 15px;
+    padding-top: 67px;
+    color: #fff;
+}
+
+.news_box {
+    border: 2px solid #098A5B;
+    max-width: 467px;
+}
+
+.news_p1 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    padding-top: 19px;
+    padding-bottom: 26px;
+}
+
+.news_ph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+}
+
+.p2 {
+    padding-top: 38px;
+}
+
+.news_read {
+    background-color: transparent;
+    color: white;
+    padding: 14px 17px 14px 17px;
+    border: 2px solid #098A5B;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    cursor: pointer;
+
+}
+
+.news_read:hover {
+    background-position: 100% 0;
+    -moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    background-image: linear-gradient(to right, #0ba360, #3cba92, #30dd8a, #2bb673);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75);
+}
+
+.text_box {
+    padding: 24px 35px 24px 19px;
+}
+
+
+@media screen and (max-width:1431px) {
+
+    .news_boxes {
+
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:948px) {
+    .news::after {
+        display: none;
+    }
+}
+
+
+/* Make enquiry section */
+
+.enquiry {
+    text-align: center;
+    padding-top: 93px;
+    padding-bottom: 126px;
+    background: #1E1E1E;
+}
