@@ -1009,6 +1009,7 @@ li:last-child:hover {
 
 .footer_wrap {
     display: flex;
+    padding-bottom: 60px;
 }
 
 .footer_h {
@@ -1027,8 +1028,35 @@ li:last-child:hover {
     margin: 12px;
 }
 
+.footer_hr {
+    width: 100%;
+    border: 1px solid #098A5B;
+}
+
+.footer_social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-bottom: 49px;
+}
+
+.social_imgs {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 21px;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
 @media screen and (max-width: 999px) {
-    
+
     .footer_logo {
         display: none;
     }
@@ -1040,13 +1068,15 @@ li:last-child:hover {
 }
 
 @media screen and (max-width: 869px) {
-    
+
     .footer_wrap {
         margin: 0 auto;
     }
+
     .footer_info {
         flex-direction: column;
         align-items: flex-start;
+        gap: 3rem;
 
     }
 }
