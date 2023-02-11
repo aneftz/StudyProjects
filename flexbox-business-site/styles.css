@@ -801,7 +801,6 @@ li:last-child:hover {
     justify-content: center;
     text-align: center;
     gap: 1rem;
-    border: 1px solid #777777;
     padding-top: 45px;
     z-index: 1;
     color: white;
@@ -830,6 +829,12 @@ li:last-child:hover {
 .testimonials_boxes p {
     padding: 3.5rem 1.5rem 1.5rem 1.5rem;
 }
+
+@media screen and (max-width:819px) {
+    .test_box_hidden {
+        display: none;
+    }
+
 
 
 /* Blog section / Latest news */
